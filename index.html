@@ -1,0 +1,479 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo-icon.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Mahafuj Chowdhury</title>
+</head>
+
+<body id="body" class="font-nunito dark:bg-slate-800">
+    <!-- nav -->
+    <nav class="w-full top-0 bg-white fixed z-20 shadow dark:bg-slate-900">
+        <div class="container mx-auto py-3 flex justify-between items-center">
+            <div class="logo flex items-center cursor-pointer">
+                <img id="black" class="w-8" src="./image/logo-icon.png" alt="">
+                <img id="white" class="w-8 hidden" src="./image/logo-icon-white.png" alt="">
+                <span class="text-2xl font-bold text-purple-900 dark:text-white">Mahafuj.</span>
+            </div>
+            <ul class="menu hidden lg:flex space-x-10 text-sm font-bold uppercase text-purple-900 dark:text-white">
+                <li class="hover:text-purple-700" style="--j:1;"><a href="#Home">home</a></li>
+                <li class="hover:text-purple-700" style="--j:2;"><a href="#About">about me</a></li>
+                <li class="hover:text-purple-700" style="--j:3;"><a href="#Experience">skill</a></li>
+                <li class="hover:text-purple-700" style="--j:4;"><a href="#Education">education</a></li>
+                <li class="hover:text-purple-700" style="--j:5;"><a href="#Work">work</a></li>
+                <li class="hover:text-purple-700" style="--j:6;"><a href="#Contact">contact</a></li>
+            </ul>
+            <div class="anime flex gap-3 items-center">
+                <div style="--i:1;">
+                    <img id="moon" class="w-6 md:w-8 cursor-pointer " src="./image/moon-icon.png" alt="">
+                    <img id="sun" class="hidden w-6 md:w-8 cursor-pointer" src="./image/sun.png" alt="">
+                </div>
+                <div id="humburger" class="lg:hidden cursor-pointer z-30" style="--i:2;--j:2;">
+                    <img id="open" class="w-8" src="./image/hamburger-64.png" alt="">
+                    <img id="close" class="w-8 hidden" src="./image/close-icon.png" alt="">
+                </div>
+            </div>
+
+            <ul id="menu" class="w-full p-10 rounded-b-3xl bg-purple-900 absolute left-0 top-0 
+                          text-white text-center space-y-10 font-bold uppercase">
+                <li style="--i:1;--j:1;"><a id="hLink" href="#Home">home</a></li>
+                <li style="--j:2;"><a id="hLink" href="#About">about me</a></li>
+                <li style="--j:3;"><a id="hLink" href="#Experience">skill</a></li>
+                <li style="--j:4;"><a id="hLink" href="#Education">education</a></li>
+                <li style="--j:5;"><a id="hLink" href="#Work">work</a></li>
+                <li style="--j:6;"><a id="hLink" href="#Contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Intro -->
+
+    <div id="Home" class="flex flex-col pt-14 lg:flex-row lg:h-screen dark:bg-slate-900">
+        <div class="w-full lg:w-1/2 flex-1 my-auto">
+            <div class="p-12 xl:ml-7 h-full lg:h-2/3 flex flex-col gap-3">
+                <h2 id="text-1" class="text-2xl md:text-4xl lg:text-3xl font-medium dark:text-white">Hello, I'm
+                </h2>
+                <h1 id="text-2" class="text-2xl md:text-3xl lg:text-4xl font-bold dark:text-white">Mahafuj Chowdhury</h1>
+                <div id="text-3" class="text-xl md:text-3xl lg:text-3xl font-bold text-purple-700 flex items-center">
+                    MERN stack developer</div>
+                <div id="text-4">
+                    <p class="text-justify text-base dark:text-gray-300">
+                        Enthusiastic, passionate and highly motivated MERN stack developer with 1.5 year experience.
+                        Capable of fast-learn and teamwork.
+                        Good knowledge of Data Structure, Algorithms and Database.
+                        Hands-on experience in API Documentation, API Development, MVC architecture and Debugging.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full lg:w-1/2 flex-1 items-center lg:overflow-hidden">
+            <div class="i-bg w-full h-full absolute right-0 bg-purple-900"></div>
+            <div class="flex w-full h-full items-center justify-center lg:top-7 lg:absolute lg:right-0">
+                <img id="animate-img" class="w-full xl:w-2/3 h-full object-cover" src="./image/My project.png" alt=""
+                    srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <section id="About" class="md:px-0 dark:bg-slate-900">
+        <div class="container md:px-16 mx-auto py-16">
+            <div class="my-auto flex flex-col gap-3 items-center">
+                <h1 class="section-title text-purple-800 font-bold">About Me</h1>
+            </div>
+            <div class="flex flex-col-reverse lg:flex-row mt-8 lg:mt-0 items-center gap-20">
+                <div class="relative w-full lg:w-1/3 flex-1">
+                    <div class="rounded-full overflow-hidden z-50 shadow-sm" style="z-index: 10;">
+                        <img src="./image/my image.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="my-auto flex flex-col gap-3" style="flex: 2;">
+                    <p class="text-gray-600 text-justify dark:text-gray-300"><span class="font-semibold">I'm
+                            Mahafuj.</span><br>
+                        A highly motivated MERN stack developer with a passion for building web applications. I have gained
+                        valuable experience in MERN stack through various projects. I have 1.5 years of experience in this
+                        field which has provide me a strong foundation in full stack development with a focuse on creating
+                        scalable and maintainable solutions.
+    
+                        I am always seeking an opportunity to learn and grow as a professional. I am excited to continue
+                        developing my skills and make an impact in the technology industry. I am confident that my technical
+                        expertise and passion for software engineering will allow me to excel in a challenging and dynamic
+                        work environment <br /><br />
+                        That's all about me. Thank you for knowing about me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill -->
+    <div id="Experience" class="py-14 dark:bg-slate-900">
+        <div class="container mx-auto py-8">
+            <!-- top -->
+            <div class="my-auto flex flex-col gap-3 items-center">
+                <h1 class="section-title text-purple-800 font-bold">My Skills</h1>
+            </div>
+            <!-- bottom -->
+            <div class="flex flex-col lg:flex-row  gap-10 mt-11">
+                <!-- card fontend-->
+                <div
+                    class="w-full items-center py-5 lg:py-10 px-5 md:px-28 rounded-3xl shadow-md dark:shadow-lg dark:text-white">
+                    <h3 class="text-center mb-8 text-xl font-bold">Fontend Development</h3>
+                    <div class="flex gap-2 md:gap-4 justify-between py-4">
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">CSS</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Javascript</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 md:gap-4 justify-between py-4">
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Redux</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Bootstrap</h3>
+                                <small>Experienced</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 md:gap-4 justify-between py-4">
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Tailwind</h3>
+                                <small>Experienced</small>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">React</h3>
+                                <small>Experienced</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card backend -->
+                <div
+                    class="w-full items-center py-5 lg:py-10 px-5 md:px-28 rounded-3xl shadow-md dark:shadow-white dark:text-white">
+                    <h3 class="text-center mb-8 text-xl font-bold">Backend Development</h3>
+                    <div class="flex gap-2 md:gap-4 justify-between py-4">
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Node</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Express</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 md:gap-4 justify-between py-4">
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">MongoDB</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">MySQL</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 md:gap-4 justify-between py-4">
+                        <div class="flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">JWT</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                        <div class=" flex gap-2 md:gap-4">
+                            <img class="w-5 h-5 mt-1" src="./image/check-icon.png" alt="" srcset="">
+                            <div>
+                                <h3 class="font-semibold">Cloudinary</h3>
+                                <small>Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- education -->
+    <div id="Education" class="py-14 dark:bg-slate-900">
+        <div class="container mx-auto py-8">
+            <div class="my-auto flex flex-col gap-3 items-center">
+                <h1 class="section-title text-purple-800 font-bold">My Education</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-11">
+                <div class="flex-1">
+                    <div class="w-full items-center rounded-3xl shadow-md dark:shadow-white">
+                        <div class="bg-purple-800 rounded-b-3xl p-6">
+                            <h3 class="text-center text-xl font-bold text-white">BSC</h3>
+                        </div>
+                        <div class="p-8 flex flex-col gap-6 items-center dark:text-white">
+                            <div class="flex w-full gap-4">
+                                <img class="h-full" src="./image/student-center.png" alt="">
+                                <h3>International Islamic University Chittagong</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img class="h-full" src="./image/department.png" alt="">
+                                <h3>Computer Science and Engineering</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/school.png" alt="">
+                                <h3>Chittagong</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/meeting-time.png" alt="">
+                                <h3>2019 - Present</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="w-full items-center rounded-3xl shadow-md dark:shadow-white">
+                        <div class="bg-purple-800 rounded-b-3xl p-6">
+                            <h3 class="text-center text-xl font-bold text-white">HSC</h3>
+                        </div>
+                        <div class="p-8 flex flex-col gap-6 items-center dark:text-white">
+                            <div class="flex w-full gap-4">
+                                <img src="./image/student-center.png" alt="">
+                                <h3>Nazirhat Collage</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/department.png" alt="">
+                                <h3>Science</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/school.png" alt="">
+                                <h3>Chittagong</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/meeting-time.png" alt="">
+                                <h3>2015 - 2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="w-full items-center rounded-3xl shadow-md dark:shadow-lg">
+                        <div class="bg-purple-800 rounded-b-3xl p-6">
+                            <h3 class="text-center text-xl font-bold text-white">SSC</h3>
+                        </div>
+                        <div class="p-8 flex flex-col gap-6 items-center dark:text-white">
+                            <div class="flex w-full gap-4">
+                                <img class="h-full" src="./image/student-center.png" alt="">
+                                <h3>Forhadabad High School</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/department.png" alt="">
+                                <h3>Science</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/school.png" alt="">
+                                <h3>Chittagong</h3>
+                            </div>
+                            <div class="flex w-full gap-4">
+                                <img src="./image/meeting-time.png" alt="">
+                                <h3>2013 - 2015</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work -->
+    <div id="Work" class="py-12 dark:bg-slate-900">
+        <div class="container mx-auto py-8">
+            <div class="my-auto flex flex-col gap-3 items-center">
+                <h1 class="section-title text-purple-800 font-bold">My Work</h1>
+            </div>
+            <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-11">
+                <div class="flex-1 flex flex-col gap-4 p-7 items-center rounded-3xl bg-purple-800 card">
+                    <div class="rounded-3xl overflow-hidden">
+                        <img class="image" src="./image/instachat.png" alt="" srcset="">
+                    </div>
+                    <h3 class=" text-white text-lg">Instachat</h3>
+                    <div class="w-full flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-3">
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://github.com/Mahafuj1843/MERN-chat-app" target="_blank">Github</a>
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://instachat-api.onrender.com" target="_blank">Live link</a>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 p-7 items-center rounded-3xl bg-purple-800 card">
+                    <div class="rounded-3xl overflow-hidden">
+                        <img class="image" src="./image/inventocare.png" alt="" srcset="">
+                    </div>
+                    <h3 class=" text-white text-lg">InventoCare</h3>
+                    <div class="w-full flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-3">
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://github.com/Mahafuj1843/Inventory-Management-MERN-" target="_blank">Github</a>
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://inventocare-web.onrender.com/" target="_blank">Live link</a>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 p-7 items-center rounded-3xl bg-purple-800 card">
+                    <div class="rounded-3xl overflow-hidden">
+                        <img class="image" src="./image/taskify.png" alt="" srcset="">
+                    </div>
+                    <h3 class=" text-white text-lg">Taskify</h3>
+                    <div class="w-full flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-3">
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://github.com/Mahafuj1843/Task-Manager.git" target="_blank">Github</a>
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://taskify-web.onrender.com/" target="_blank">Live link</a>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 p-7 items-center rounded-3xl bg-purple-800 card">
+                    <div class="rounded-3xl overflow-hidden">
+                        <img class="image" src="./image/Portfolio.png" alt="" srcset="">
+                    </div>
+                    <h3 class=" text-white text-lg">My Portfolio</h3>
+                    <div class="w-full flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-3">
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://github.com/Mahafuj1843/My_Portfolio.git" target="_blank">Github</a>
+                        <a class=" w-full py-3 px-4 bg-white dark:bg-slate-900 rounded-xl font-semibold text-center text-purple-900 dark:text-white"
+                        href="https://mahafuj-chowdhury.onrender.com" target="_blank">Live link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="Contact" class="py-10 dark:bg-slate-900">
+        <div class="container mx-auto py-8">
+            <div class="my-auto flex flex-col gap-3 items-center">
+                <h1 class="section-title text-purple-800 font-bold">Contact Me</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-4 py-8 gap-10 lg:gap-0">
+                <div class="flex-1">
+                    <h1 class="text-xl font-bold mb-3 lg:mb-5 text-purple-900 dark:text-white">Get in Touch</h1>
+                    <div class="flex flex-col gap-6 items-center">
+                        <div class="flex items-center w-full gap-4">
+                            <img class="h-fit" src="./image/user.png" alt="">
+                            <div>
+                                <h1 class="font-bold dark:text-white">Name</h1>
+                                <h3 class="text-gray-400">Mahafuj Chowdhury</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full gap-4">
+                            <img class="h-fit" src="./image/mail.png" alt="">
+                            <div>
+                                <h1 class="font-bold dark:text-white">Email</h1>
+                                <h3 class="text-gray-400">md.mahafuj012@gmail.com</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full gap-4">
+                            <img class="h-fit" src="./image/phone.png" alt="">
+                            <div>
+                                <h1 class="font-bold dark:text-white">Phone</h1>
+                                <h3 class="text-gray-400">01865761406</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center w-full gap-4">
+                            <img class="h-fit" src="./image/location.png" alt="">
+                            <div>
+                                <h1 class="font-bold dark:text-white">Address</h1>
+                                <h3 class="text-gray-400">Rufabad, Oxygen, Chittagong</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <form class="flex flex-col gap-4" action="#">
+                        <h1 class="text-xl font-bold text-purple-900 dark:text-white">Message Me</h1>
+                        <div class="w-full flex flex-col lg:flex-row gap-3 dark:text-gray-300">
+                            <div class="flex-1">
+                                <input
+                                    class="w-full p-3 ring-2 ring-gray-200 dark:ring-gray-600 rounded-lg focus:outline-none dark:bg-slate-900 dark:shadow-none"
+                                    type="text" placeholder="Name" required>
+                            </div>
+                            <div class="flex-1">
+                                <input
+                                    class="w-full p-3 ring-2 ring-gray-200 dark:ring-gray-600 rounded-lg focus:outline-none dark:bg-slate-900 dark:shadow-none"
+                                    type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="flex-1 dark:text-gray-300">
+                            <input
+                                class="w-full p-3 ring-2 ring-gray-200 dark:ring-gray-600 rounded-lg focus:outline-none dark:bg-slate-900 dark:shadow-none"
+                                type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="flex-1 dark:text-gray-300">
+                            <textarea
+                                class="w-full p-3 ring-2 ring-gray-200 dark:ring-gray-600 rounded-lg focus:outline-none dark:bg-slate-900 dark:shadow-none"
+                                style="resize: none;" type="textarea" cols="30" rows="3" placeholder="Massage...."
+                                required></textarea>
+                        </div>
+                        <button
+                            class="w-full px-3 py-2 text-white bg-purple-900 rounded-md cursor-pointer font-medium dark:shadow-none"
+                            type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="dark:bg-slate-900">
+    <!-- footer -->
+    <div class="py-4 dark:bg-slate-900">
+        <div class="container mx-auto">
+            <div class="my-auto flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
+                <div class="flex items-center cursor-pointer">
+                    <img id="black" class="w-8" src="./image/logo-icon.png" alt="">
+                    <img id="white" class="w-8 hidden" src="./image/logo-icon-white.png" alt="">
+                    <span class="text-2xl font-bold text-purple-900 dark:text-white">Mahafuj.</span>
+                </div>
+                <h2 class="text-sm font-semibold text-purple-900 dark:text-white text-center ">Created by Mahafuj
+                    Chowdhury <br> © 2022 All rights reserved.</h2>
+                <div class="flex gap-2">
+                    <a href="https://www.facebook.com/mdasif.chowdhure/" target="_blank"><img src="./image/facebook.png" alt=""></a>
+                    <a href="https://github.com/Mahafuj1843" target="_blank"><img src="./image/github-4.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="./image/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/mahafujul-alam-chowdhury-688177250/" target="_blank"><img src="./image/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.i-bg {
+    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #7f13d1;
+    bottom: 1px;
+    left: calc(50% - 85px);
+}
+
+.section-title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #581c87;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0.1rem purple;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0.1rem purple;
+}
+
+#menu {
+    position: fixed;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    transition: all .3s ease-in;
+}
+
+#menu.active {
+    opacity: 1;
+    top: 0;
+}
+
+.card .image{
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .image{
+    transform: scale(1.2);
+}
